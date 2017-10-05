@@ -1,10 +1,15 @@
-package by.vadim.mail;
+package by.vadim.mail.model;
+
+import java.util.List;
+import java.util.Map;
 
 public class Mail {
 
     private String to;
     private String subject;
     private String content;
+    private Map<String,String> model;
+    private Map<String,Object> attachments;
 
     public Mail(){
 
@@ -38,6 +43,22 @@ public class Mail {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public Map<String,String> getModel() {
+        return model;
+    }
+
+    public void setModel(Map<String,String> model) {
+        this.model = model;
+    }
+
+    public Map<String,Object> getAttachments() {
+        return attachments;
+    }
+
+    public void setAttachments(Map<String,Object> attachments) {
+        this.attachments = attachments;
     }
 
 }
